@@ -24,16 +24,6 @@ function Homepage() {
     }
   return (
     <>
-      
-      {/* <div className="d-flex  justify-content-around  m-5 p-5" >
-        <div>
-          <img id='logo' src={logo} alt='logo'/>
-        </div>
-        <div className='m-1 ' id="about">
-          <p className='p-5'>TTT is built for and by creators. We run a vibrant and inclusive community of 5 million+ people. From writers, influencers, designers, actors, content lovers and culture adopters - these folks love what we do. Ambitious brands leverage our reach of 25 million people / week to seed their stories on our platform.</p>
-        </div>
-      </div> */}
-      {/* <button id="Submit Button"onClick={Handleclick}>Submit</button> */}
       <section id="main"style={{height:"100%"}}>
       <h1 className='text-center pt-5 heading'>Teribly Tiny Tales</h1>
       <div className="container">

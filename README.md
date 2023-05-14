@@ -1,70 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Title
 
-## Available Scripts
+An assignment given by TTT(Teribly Tiny Tales) for the selection for hiring rounds. Here we are given a text api from where we need to find most 20 occuring words and plot it into a Histogram.
+This is all about the project.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Documentation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Libraries or hooks i have used : 
 
-### `npm test`
+1-"histogram": "^3.0.3" from recharts": "^2.6.2"
+This library quickly build your charts with decoupled, reusable React components.
+So using recharts i made bargraph to show the data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2-CSV Link  from 'react-csv'
 
-### `npm run build`
+Generate a CSV file from given data.
+This data can be an array of arrays, an array of literal objects, or strings.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3-React useState
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I have used useState to update the finaldata that was fetched from text. To give csv file the exact data , the i created state.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+//LOGIC//
 
-### `npm run eject`
+1-First i fetched the data using promise (async-await).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2-Converted the data to text.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3-Splitted the data to make words using ("/\s+/") which removed whitespaces,commas etc.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4-I reduced the same array of words to map where i counted the occurence of each data.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5-After reducing the array into map,I sorted it in count wise (desceding order).
 
-## Learn More
+6-Then finally i sliced from (0,20) to get first most occuring words.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+7-then i updated the same to state.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+8-I passed the state to csv link for the export feature.
 
-### Code Splitting
+9-With the updated state i created the barchart with the help of recharts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I To install the dependancies : npm install
 
-### Advanced Configuration
+start the project : npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+    
+## 🚀 About Me
+I'm a Front-End Developer and i also have a keen interest in UI/UX as well. 
+I have 2 years of experience as a graphic designer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Toolkits i use:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Photoshop,Canva,Figma
+
+Premiere Pro, Filmora
+
+
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio-ui-ux.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranab-patra77/)
+
+
