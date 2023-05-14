@@ -43,7 +43,9 @@ I have used useState to update the finaldata that was fetched from text. To give
 
 9-With the updated state i created the barchart with the help of recharts.
 
+## DEPLOYMENT
 
+Deployment Link : https://teribly-tiny-tales.vercel.app/
 
 
 ## Installation
